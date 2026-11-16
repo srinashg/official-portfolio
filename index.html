@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srinesh Ganesh | Software Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Srinesh Ganesh, Software Engineer specializing in full-stack development, cloud, and DevOps." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg-soft: #121a33;
+      --surface: #161f3d;
+      --text: #e9eefc;
+      --muted: #a8b4d6;
+      --accent: #6aa7ff;
+      --accent-2: #5eead4;
+      --border: #253359;
+      --max: 1080px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at 20% 0%, #18264f 0%, var(--bg) 50%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(100% - 2rem, var(--max));
+      margin-inline: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      background: rgba(11, 16, 32, 0.75);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.8rem 0;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 4rem 0 2.5rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: #d1ddff;
+      background: rgba(106, 167, 255, 0.2);
+      border: 1px solid rgba(106, 167, 255, 0.45);
+      border-radius: 999px;
+      padding: 0.3rem 0.8rem;
+    }
+
+    h1, h2, h3 { line-height: 1.2; margin: 0 0 0.8rem; }
+
+    h1 { font-size: clamp(1.9rem, 4vw, 3rem); }
+    h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); }
+    h3 { font-size: 1.1rem; }
+
+    .intro {
+      color: var(--muted);
+      max-width: 70ch;
+      font-size: 1.03rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      color: #d6e1ff;
+    }
+
+    .contact a, .chip {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.9rem;
+    }
+
+    section {
+      margin: 2rem 0;
+      background: rgba(18, 26, 51, 0.65);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.4rem;
+    }
+
+    .item {
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .item:first-of-type { border-top: 0; padding-top: 0.1rem; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.4rem 1rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 0.45rem;
+    }
+
+    ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    li { margin: 0.35rem 0; }
+
+    .skills {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .skills strong { display: block; margin-bottom: 0.3rem; }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 1.2rem 0 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .nav { align-items: flex-start; flex-direction: column; }
+      .links { gap: 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top">Srinesh Ganesh</a>
+      <nav class="links" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero" aria-label="Introduction">
+      <span class="tag">Software Engineer • Dallas-Fort Worth Metroplex, TX</span>
+      <h1>Building production-ready software across APIs, cloud infrastructure, and full-stack systems.</h1>
+      <p class="intro">
+        I’m a Software Engineer who enjoys building scalable software solutions to solve challenging business problems.
+        In my recent role at Manhattan Associates, I developed labor and yard management features for an enterprise supply chain management
+        platform and worked closely with other engineers and business stakeholders to deliver customer-driven enhancements. I’m seeking
+        full-time software or data-focused roles to apply my technical skills and continue building impactful technology solutions.
+        <br>
+        Let's connect!
+      </p>
+      <div class="contact" aria-label="Contact links">
+        <span class="chip">(469) 410-9165</span>
+        <a href="mailto:emailtosrinesh@gmail.com">emailtosrinesh@gmail.com</a>
+        <a href="https://linkedin.com/in/srineshg" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/srinashg" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+
+      <article class="item">
+        <h3>Software Engineer • Manhattan Associates</h3>
+        <div class="meta"><span>Aug 2025 – Jun 2026</span></div>
+        <ul>
+          <li>Enhanced labor and yard management products used by 1,200+ warehouse customers by analyzing requirements and building Spring Boot REST APIs.</li>
+          <li>Refactored 1,500+ lines of core Java warehouse management code to improve maintainability and align with design standards.</li>
+          <li>Validated labor management functionality through regression and release-candidate testing to catch defects before production.</li>
+          <li>Delivered Agile sprint commitments by managing user stories, tracking progress, and coordinating technical tasks.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <h3>Software Engineer Intern • USAA</h3>
+        <div class="meta"><span>May 2024 – Jul 2024</span></div>
+        <ul>
+          <li>Built Datadog network monitoring dashboards for Guidewire ClaimCenter APIs supporting a $1.5B+ business unit.</li>
+          <li>Detected API performance anomalies in latency, DNS health, and traffic flow through historical trend analysis and stakeholder collaboration.</li>
+          <li>Improved visibility into Claims Recovery API dependencies by mapping Spring Boot relationships and documenting technical configurations.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <h3>Software Engineer Intern • Fidelity Investments</h3>
+        <div class="meta"><span>Jun 2023 – Aug 2023</span></div>
+        <ul>
+          <li>Resolved Kubernetes OPA violations in customer/account applications by configuring containers for non-root execution and validating security contexts.</li>
+          <li>Built and deployed changes through Jenkins CI/CD to AWS EKS non-production environments and used Datadog for container and cluster inspection.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="item">
+        <h3>Inventory &amp; Order Management</h3>
+        <div class="meta"><span>Full-Stack Engineering Project</span><span>Oct 2026</span></div>
+        <p><strong>Tech:</strong> C#, ASP.NET Core, EF Core, PostgreSQL, React, TypeScript</p>
+        <ul>
+          <li>Designed React/TypeScript interfaces and ASP.NET Core REST APIs for inventory, order processing, and authentication workflows using DI and OOP principles.</li>
+          <li>Designed PostgreSQL schema and EF Core models for inventory transactions and order fulfillment relationships.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <h3>AI Study Assistant</h3>
+        <div class="meta"><span>Full-Stack + AI Engineering Project</span><span>Sep 2026 – Oct 2026</span></div>
+        <p><strong>Tech:</strong> Java, Spring Boot, Spring AI, PostgreSQL, Next.js, AWS</p>
+        <ul>
+          <li>Implemented an LLM-powered backend using RAG and agentic AI pipelines within a layered REST architecture.</li>
+          <li>Automated Spring Boot and Next.js build validation with GitHub Actions and configured AWS CloudFormation for EC2 provisioning.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <h3>Emission Analyzer</h3>
+        <div class="meta"><span>Raytheon Software Engineering Project</span><span>Jan 2025 – May 2025</span></div>
+        <p><strong>Tech:</strong> Python, Django, PostgreSQL, Docker</p>
+        <ul>
+          <li>Worked with student developers and Raytheon stakeholders to convert business requirements into technical specifications.</li>
+          <li>Developed Django REST APIs for aircraft engine data and emissions prediction with validation, persistence, and model integration.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article class="item">
+        <h3>Bachelor of Science in Software Engineering • The University of Texas at Dallas</h3>
+        <div class="meta"><span>May 2025</span></div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <strong>Languages</strong>
+          <span>Java, C#, Python, SQL (PostgreSQL), JavaScript, TypeScript</span>
+        </div>
+        <div>
+          <strong>Frameworks</strong>
+          <span>Spring Boot, ASP.NET Core, React, Next.js</span>
+        </div>
+        <div>
+          <strong>Cloud &amp; DevOps</strong>
+          <span>AWS, Docker, Jenkins, GitHub Actions, Git</span>
+        </div>
+        <div>
+          <strong>Certifications</strong>
+          <span>AWS Certified Cloud Practitioner (CLF-C02)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Srinesh Ganesh • Portfolio
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
